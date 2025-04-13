@@ -78,3 +78,12 @@ a:hover{
         flex-direction: column;
     }
 }
+
+#albuns {
+    text-align: center; 
+}
+
+#albuns img {
+    width: 20.4%; 
+    height: auto; 
+}
