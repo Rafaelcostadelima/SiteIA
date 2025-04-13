@@ -29,10 +29,18 @@ header{
 
 h1{
     text-align: center;
+    font-size: 400%;
+    color: #e7e113;
+}
+
+h2{
+    font-size: 200%;
+    color: #bdb831;
 }
 
 ul{
     margin-left: 20px;
+    margin-left: 2em;
 }
 
 nav ul{
