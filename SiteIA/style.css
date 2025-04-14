@@ -12,8 +12,6 @@
     scroll-behavior: smooth;
     font-size: 108%;
     text-align: justify;
-    margin-right: 3px;
-    margin-left: 2px;
 }
 
 
@@ -93,15 +91,17 @@ a:hover{
     }
 }
 
-#albuns {
+#albuns .item{
     text-align: center; 
 }
 
 #albuns img {
-    width: 20.4%; 
+    width: 22%; 
     height: auto; 
 }
 
 p{
     text-indent: 1.3em;
+    margin-right: 3px;
+    margin-left: 2px;
 }
