@@ -16,12 +16,12 @@
 
 
 body{
-    background-color: black;
+    background-color: #111112;
     color: floralwhite;
 }
 
 header{
-    background-color: #242a2f;
+    background-color: #1a1d1f;
     padding: 20px 20px 20px 20px;
     width: 100%;
     top: 0%;
@@ -79,18 +79,6 @@ a:hover{
     color: #e7e113;
 }
 
-@media (max-width:780px){
-    header .container{
-        flex-direction: column;
-        text-align: center;
-    }
-
-    nav ul{
-        margin-top: 10px;
-        flex-direction: column;
-    }
-}
-
 #albuns .item{
     text-align: center; 
 }
@@ -104,4 +92,26 @@ p{
     text-indent: 1.3em;
     margin-right: 3px;
     margin-left: 2px;
+}
+
+.banner{
+    background: url(img/Banner.jpg) no-repeat center/cover;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    text-shadow: 3px 3.5px 6px rgb(168, 174, 54);
+}
+
+@media (max-width:780px){
+    header .container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul{
+        margin-top: 10px;
+        flex-direction: column;
+    }
 }
