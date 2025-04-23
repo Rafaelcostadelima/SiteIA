@@ -79,13 +79,10 @@ a:hover{
     color: #e7e113;
 }
 
-#albuns .item{
-    text-align: center; 
-}
-
 #albuns img {
     width: 22%; 
-    height: auto; 
+    height: auto;
+    padding-top: 3%; 
 }
 
 p{
@@ -98,10 +95,13 @@ p{
     background: url(img/Banner.jpg) no-repeat center/cover;
     height: 600px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
-    font-size: xx-large;
-    text-shadow: 3px 3.5px 6px rgb(168, 174, 54);
+    font-size: 1.3em;
+    text-shadow: 6.5px 4px 5px rgb(168, 174, 54);
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 @media (max-width:780px){
