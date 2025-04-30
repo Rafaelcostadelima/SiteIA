@@ -31,12 +31,12 @@ header{
 
 h1{
     text-align: center;
-    font-size: 380%;
+    font-size: 3em;
     color: #e7e113;
 }
 
 h2{
-    font-size: 200%;
+    font-size: 1.5em;
     color: #bdb831;
     text-align: left;
 }
@@ -79,10 +79,39 @@ a:hover{
     color: #e7e113;
 }
 
+#sobre{
+    padding: 1.3em;
+}
+
+#compositores{
+    padding-right: 1.3em;
+}
+
+#curiosidades{
+    padding-right: 1.3em;
+}
+
 #albuns img {
-    width: 22%; 
-    height: auto;
-    padding-top: 3%; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; 
+    max-width: 250px; 
+    height: auto; 
+    clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+    display: block;
+}
+
+.hex-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+    padding: 0 5%;
+}
+
+.hex {
+    flex-basis: 22%;
+    text-align: center;
 }
 
 p{
@@ -113,5 +142,20 @@ p{
     nav ul{
         margin-top: 10px;
         flex-direction: column;
+    }
+
+    .hex {
+        text-align: center;
+        flex-basis: 90%;
+    }
+
+    .hex-grid{
+        justify-content: center;
+        gap: 30px;
+    }
+}
+@media (max-width: 471){
+    h1{
+        font-size: 0.2em;
     }
 }
