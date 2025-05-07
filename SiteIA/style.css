@@ -154,7 +154,7 @@ p{
         gap: 30px;
     }
 }
-@media (max-width: 471){
+@media (max-width: 420){
     h1{
         font-size: 0.2em;
     }
