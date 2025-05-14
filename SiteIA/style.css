@@ -147,22 +147,41 @@ section{
 }
 
 #compositores .item{
-    background-color: #24282b;
+    background-color: #32363a;
     border: 4px solid #888525; /*Coloca uma borda*/
     border-radius: 10px; /*arredonda as bordas*/
     padding: 20px; /*Cria um espaçamento entre a borda e o conteúdo*/
     box-shadow: 0px 4px 10px rgb(255, 255, 255); /*Cria uma sombra */
-    transition: transform 0.2s ease, box-shadow 0.2s ease; /*faz uma transição ao passar o mouse por cima*/
+    transition: transform 0.8s ease-out, box-shadow 0.2s ease; /*faz uma transição ao passar o mouse por cima*/
     cursor: pointer; /*Transforma o mouse em ponteiro*/
 }
 
 #compositores .item:hover{
     transform: translateY(-5px); /*Levanta o card levemente*/
-    box-shadow: 0px 4px 6px rgb(189, 189, 189);
+    box-shadow: 0px 4px 6px rgb(189, 189, 189, 0.2);
 }
 
 #compositores .item:active{
-    transform: scale(0.98);
+    transform: scale(0.98); /*Diminui minimamente o card ao clicar*/
+    box-shadow: 0px 4px 6px rgb(189, 189, 189);
+}
+
+#compositores .item h3{
+    color: #888525;
+    text-align: center;
+}
+
+#compositores .item p{
+    margin-top: 15px;
+    font-size: 0.95em;
+    color: floralwhite;
+}
+
+#compositores .item img{
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 10px;
 }
 
 @media (max-width:780px){
