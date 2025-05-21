@@ -140,8 +140,9 @@ section{
 
 #compositores {
     display: grid; /* Transforma o layout em uma grade (grid) */
-    grid-template-columns: repeat(auto-fit, minmax(200px, 750px)); /*a função repeat(auto-fit) permite que as imagens se ajustem automaticamente, e o minmax(200, 1fr) permite que o mínimo permitido seja de 200px, e o máximo seja de 1fr(espaço disponível na tela)*/
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /*a função repeat(auto-fit) permite que as imagens se ajustem automaticamente, e o minmax(200, 1fr) permite que o mínimo permitido seja de 200px, e o máximo seja de 1fr(espaço disponível na tela)*/
     gap: 20px; /*Inclui um espaçamento entre as imagens*/
+    margin-top: 1.3em;
     text-align: center;
     margin: 0.06em;
 }
@@ -150,9 +151,9 @@ section{
     background-color: #32363a;
     font-size: 1em;
     border: 4px solid #888525; /*Coloca uma borda*/
-    border-radius: 15px; /*arredonda as bordas*/
+    border-radius: 20px; /*arredonda as bordas*/
     padding: 20px; /*Cria um espaçamento entre a borda e o conteúdo*/
-    box-shadow: 0px 4px 10px rgb(255, 255, 255); /*Cria uma sombra */
+    box-shadow: 3px 4px 10px rgb(255, 255, 255); /*Cria uma sombra */
     transition: transform 0.8s ease-out, box-shadow 0.8s ease-in; /*faz uma transição ao passar o mouse por cima*/
     cursor: pointer; /*Transforma o mouse em ponteiro*/
 }
@@ -177,6 +178,7 @@ section{
     margin-top: 15px;
     font-size: 0.95em;
     color: floralwhite;
+    margin-bottom: 1.8em;
 }
 
 #compositores .item img{
@@ -184,7 +186,59 @@ section{
     max-width: 650px;
     height: auto;
     margin-bottom: 10px;
+    align-items: center;
+}
+
+.card{
+    background: #34383b00;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(59, 59, 59, 0.932);
+    max-width: 300px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    display: none;
     justify-content: center;
+    align-items: center;
+}
+
+.modal:target{
+    display: flex;
+}
+
+.modal-content{
+    background-color: rgba(0, 0, 0, 0.795);
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 3px 4px 10px rgb(99, 99, 99);
+    color: black;
+}
+
+.modal-content h3{
+    color: #888525;
+}
+
+.modal-content p{
+    color: rgb(221, 221, 220);
+}
+
+.close-bnt{
+    margin-top: 20px;
+    display: inline-block;
+    padding: 8px 16px;
+    background: rgb(223, 9, 9);
+    color: whitesmoke;
+    border-radius: 10px;
+    text-decoration: none;
 }
 
 @media (max-width:780px){
