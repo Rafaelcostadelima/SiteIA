@@ -82,6 +82,10 @@ a:hover{
     padding: 1.3em;
 }
 
+#sobre .sobre-container .sobre-texto p{
+    margin-bottom: 40px;
+}
+
 #compositores{
     padding-right: 1.3em;
 }
@@ -194,8 +198,13 @@ section{
     margin-top: 10px;
     border-radius: 15px;
     margin-bottom: 10px;
-    box-shadow: 4px 2px 10.6px 10px #6c757e;
+    box-shadow: 4px 2px 10.6px 4px #6c757e;
 
+}
+
+#compositores .container h1{
+    grid-column: 1 / -1;
+    margin-bottom: 20px;
 }
 
 .modal{
