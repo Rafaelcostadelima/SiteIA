@@ -70,7 +70,7 @@ header .container{
 }
 
 .logo{
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold;
 }
 
@@ -87,7 +87,8 @@ a:hover{
 }
 
 #compositores{
-    padding-right: 1.3em;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 #curiosidades{
@@ -111,6 +112,7 @@ a:hover{
     justify-content: center;
     gap: 20px; 
     padding: 0 5%;
+    margin-bottom: 65px;
 }
 
 .hex {
@@ -120,6 +122,10 @@ a:hover{
 
 .hex:hover{
     transform: scale(0.98);
+}
+
+#albuns h1{
+    margin-bottom: 20px;
 }
 
 p{
@@ -148,7 +154,7 @@ section{
 
 #compositores .container{
     display: grid; /* Transforma o layout em uma grade (grid) */
-    grid-template-columns: repeat(auto-fit, minmax(200px, 909px)); /*a função repeat(auto-fit) permite que as imagens se ajustem automaticamente, e o minmax(200, 1fr) permite que o mínimo permitido seja de 200px, e o máximo seja de 1fr(espaço disponível na tela)*/
+    grid-template-columns: repeat(auto-fit, minmax(200px, 890px)); /*a função repeat(auto-fit) permite que as imagens se ajustem automaticamente, e o minmax(200, 1fr) permite que o mínimo permitido seja de 200px, e o máximo seja de 1fr(espaço disponível na tela)*/
     gap: 20px; /*Inclui um espaçamento entre as imagens*/
     margin-top: 1.3em;
     text-align: center;
@@ -319,6 +325,16 @@ section{
 
 footer{
     margin-bottom: 10px;
+}
+
+@media(max-width:1829px){
+    #compositores .container{
+        display: grid; /* Transforma o layout em uma grade (grid) */
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1829px)); /*a função repeat(auto-fit) permite que as imagens se ajustem automaticamente, e o minmax(200, 1fr) permite que o mínimo permitido seja de 200px, e o máximo seja de 1fr(espaço disponível na tela)*/
+        gap: 20px; /*Inclui um espaçamento entre as imagens*/
+        margin-top: 1.3em;
+        text-align: center;
+    }
 }
 
 @media (max-width:780px){
