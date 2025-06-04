@@ -8,7 +8,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
     scroll-behavior: smooth;
     font-size: 108%;
     text-align: justify;
@@ -33,12 +32,18 @@ h1{
     text-align: center;
     font-size: 3em;
     color: #e7e113;
+    font-family: "Notable", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 h2{
     font-size: 1.5em;
     color: #bdb831;
     text-align: left;
+    font-family: "Notable", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 ul{
@@ -100,7 +105,7 @@ a:hover{
     margin-left: auto;
     margin-right: auto;
     width: 100%; 
-    max-width: 300px; 
+    max-width: 350px; 
     height: auto; 
     clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
     display: block;
@@ -143,7 +148,10 @@ p{
     align-items: flex-start;
     justify-content: center;
     font-size: 1.3em;
-    text-shadow: 6.5px 4px 5px rgb(168, 174, 54);
+    font-family: "Holtwood One SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 6.5px 4px 5px rgb(0, 0, 0);
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -184,7 +192,10 @@ section{
 #compositores .item h3{
     color: #888525;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.6em;
+    font-family: "Notable", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 #compositores .item p{
@@ -205,7 +216,6 @@ section{
     border-radius: 15px;
     margin-bottom: 10px;
     box-shadow: 4px 2px 10.6px 4px #6c757e;
-
 }
 
 #compositores .container h1{
@@ -295,12 +305,16 @@ section{
     box-shadow: 3px 4px 10px rgb(99, 99, 99);
     color: black;
     font-size: 1em;
+    overflow-y: auto;
 }
 
 .modal-content h3{
     color: #888525;
     font-size: 1.5em;
     margin-bottom: 0.5em;
+    font-family: "Notable", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .modal-content p{
@@ -359,18 +373,49 @@ footer{
     }
 
     section{
-        scroll-margin-top: 155px;
+        scroll-margin-top: 200px;
     }
 
     h1 {
         text-align: center;
-        font-size: 2.4em;
+        font-size: 1.6em;
     }
 
     h2 {
-        font-size: 1em;
+        font-size: 0.78em;
         text-align: left;
     }
+
+    h3{
+        font-size: 0.6em;
+    }
+
+    .modal-content{
+        background-color: rgba(0, 0, 0, 0.815);
+        padding: 30px;
+        border-radius: 20px;
+        max-width: 400px;
+        text-align: center;
+        box-shadow: 3px 4px 10px rgb(99, 99, 99);
+        color: black;
+        font-size: 0.6em;
+        overflow-y: auto;
+        margin-top: 180px;
+    }
+
+    .modal-content h3{
+        color: #888525;
+        font-size: 1.6em;
+        margin-bottom: 0.5em;
+        font-family: "Notable", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+    
+    .modal-content p{
+        color: rgb(221, 221, 220);
+        font-size: 1.3em;
+    }    
 
     p {
         text-indent: 0.7em;
@@ -402,9 +447,9 @@ footer{
 }
 
 
-@media (max-width: 350px){
+@media (max-width: 500px){
     h1{
         text-align: center;
-        font-size: 1.43em;
+        font-size: 1.2em;
     }
 }
