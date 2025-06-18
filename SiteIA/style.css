@@ -20,8 +20,8 @@ body{
 }
 
 header{
-    background-color: #1a1d1f;
-    padding: 20px 20px 20px 20px;
+    background-color: #2a2b39;
+    padding: 30px;
     width: 100%;
     top: 0%;
     position: sticky;
@@ -224,12 +224,16 @@ section{
 }
 
 .modal{
-    background: #34383b00;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(59, 59, 59, 0.932);
-    margin: auto;
-    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.664);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
 }
 
 .btn {
@@ -280,17 +284,7 @@ section{
     transform: scale(0.99);
 }
 
-.modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.664);
-    display: none;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .modal:target{
     display: flex;
@@ -341,17 +335,21 @@ footer{
     margin-bottom: 10px;
 }
 
-@media(max-width:1829px){
+@media(max-width:1400px){
     #compositores .container{
         display: grid; /* Transforma o layout em uma grade (grid) */
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1829px)); /*a função repeat(auto-fit) permite que as imagens se ajustem automaticamente, e o minmax(200, 1fr) permite que o mínimo permitido seja de 200px, e o máximo seja de 1fr(espaço disponível na tela)*/
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1300px)); /*a função repeat(auto-fit) permite que as imagens se ajustem automaticamente, e o minmax(200, 1fr) permite que o mínimo permitido seja de 200px, e o máximo seja de 1fr(espaço disponível na tela)*/
         gap: 20px; /*Inclui um espaçamento entre as imagens*/
         margin-top: 1.3em;
         text-align: center;
     }
 }
 
-@media (max-width:780px){
+@media (max-width:750px){
+    header{
+        padding: 20px;
+    }
+    
     header .container{
         flex-direction: column;
         text-align: center;
@@ -399,8 +397,9 @@ footer{
         box-shadow: 3px 4px 10px rgb(99, 99, 99);
         color: black;
         font-size: 0.6em;
+        margin-top: 300px;
+        margin-bottom: 150px;
         overflow-y: auto;
-        margin-top: 180px;
     }
 
     .modal-content h3{
@@ -451,5 +450,19 @@ footer{
     h1{
         text-align: center;
         font-size: 1.2em;
+    }
+
+    .modal-content{
+        background-color: rgba(75, 75, 75, 0.973);
+        padding: 30px;
+        border-radius: 20px;
+        max-width: 400px;
+        text-align: center;
+        box-shadow: 3px 4px 10px rgb(99, 99, 99);
+        color: black;
+        font-size: 0.6em;
+        margin-top: 920px;
+        margin-bottom: 150px;
+        overflow-y: scroll;
     }
 }
