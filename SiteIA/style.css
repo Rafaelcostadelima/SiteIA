@@ -163,7 +163,7 @@ section{
 
 #compositores .container{
     display: grid; /* Transforma o layout em uma grade (grid) */
-    grid-template-columns: repeat(auto-fit, minmax(200px, 890px)); /*a função repeat(auto-fit) permite que as imagens se ajustem automaticamente, e o minmax(200, 1fr) permite que o mínimo permitido seja de 200px, e o máximo seja de 1fr(espaço disponível na tela)*/
+    grid-template-columns: repeat(3, 1fr); 
     gap: 20px; /*Inclui um espaçamento entre as imagens*/
     margin-top: 1.3em;
     text-align: center;
@@ -293,12 +293,12 @@ section{
     background-color: rgba(58, 58, 58, 0.815);
     padding: 30px;
     border-radius: 20px;
-    margin-top: 450px;
+    margin-top: 100px;
     max-width: 700px;
+    height: 500px;
     text-align: center;
     box-shadow: 3px 4px 10px rgb(99, 99, 99);
     color: black;
-    font-size: 1em;
     overflow-y: auto;
 }
 
@@ -358,21 +358,12 @@ section{
 }
 
 footer{
+    padding: 20px;
     margin-bottom: 15px;
     margin-top: 30px;
 }
 
-@media(max-width:1829px){
-    #compositores .container{
-        display: grid; /* Transforma o layout em uma grade (grid) */
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1829px)); /*a função repeat(auto-fit) permite que as imagens se ajustem automaticamente, e o minmax(200, 1fr) permite que o mínimo permitido seja de 200px, e o máximo seja de 1fr(espaço disponível na tela)*/
-        gap: 20px; /*Inclui um espaçamento entre as imagens*/
-        margin-top: 1.3em;
-        text-align: center;
-    }
-}
-
-@media (max-width:800px){
+@media (max-width:850px){
     header{
         padding: 20px;
     }
@@ -416,16 +407,9 @@ footer{
     }
 
     .modal-content{
-        background-color: rgba(58, 58, 58, 0.815);
-        padding: 30px;
-        border-radius: 20px;
-        max-width: 400px;
-        text-align: center;
-        box-shadow: 3px 4px 10px rgb(99, 99, 99);
-        color: black;
-        font-size: 0.67em;
-        margin-top: 1050px;
-        overflow-y: auto;
+        max-width: 450px;
+        height: 400px;
+        margin-top: 150px;
     }
 
     .modal-content h3{
@@ -442,7 +426,7 @@ footer{
         font-size: 1.3em;
     }    
 
-    p {
+    p{
         text-indent: 0.7em;
         font-size: 0.7em;
         margin-right: 2px;
@@ -464,6 +448,14 @@ footer{
 
     #curiosidades ul{
         font-size: 0.7em;
+    }
+
+    #compositores .container{
+        display: grid; /* Transforma o layout em uma grade (grid) */
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px; /*Inclui um espaçamento entre as imagens*/
+        margin-top: 1.3em;
+        text-align: center;
     }
 
     #compositores .item{
@@ -495,25 +487,30 @@ footer{
     .galeria{
         padding: 20px;
     }
+
+    #contato{
+        padding: 15px;
+    }
 }
 
-@media (max-width: 500px){
+@media (max-width: 450px){
     h1{
         text-align: center;
         font-size: 1.2em;
     }
 
-    .modal-content{
-        background-color: rgba(58, 58, 58, 0.815);
-        padding: 30px;
-        border-radius: 20px;
-        max-width: 400px;
+    #compositores .container{
+        display: grid; /* Transforma o layout em uma grade (grid) */
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 20px; /*Inclui um espaçamento entre as imagens*/
+        margin-top: 1.3em;
         text-align: center;
-        box-shadow: 3px 4px 10px rgb(99, 99, 99);
-        color: black;
-        font-size: 0.6em;
-        margin-top: 920px;
-        overflow-y: auto;
+    }
+
+    .modal-content{
+        max-width: 400px;
+        font-size: 20px;
+        margin-top: 250px;
     }
 }
 
@@ -545,7 +542,7 @@ footer{
     }
 }
 
-@media (max-width: 300px){
+@media (max-width: 321px){
     h1{
         text-align: center;
         font-size: 1.1em;
@@ -556,15 +553,8 @@ footer{
     }
 
     .modal-content{
-        background-color: rgba(58, 58, 58, 0.815);
-        padding: 30px;
-        border-radius: 20px;
-        max-width: 400px;
-        text-align: center;
-        box-shadow: 3px 4px 10px rgb(99, 99, 99);
-        color: black;
-        font-size: 0.6em;
-        margin-top: 1400px;
-        overflow-y: auto;
+        max-width: 300px;
+        height: 400px;
+        margin-top: 200px;
     }
 }
