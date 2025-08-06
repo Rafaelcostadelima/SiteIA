@@ -34,19 +34,39 @@
     </section>
     <main>
         <section id="contato">
-        <h1>Contato</h1>
-            <div class="contato-container">
-            <div class="gmail">
-                <p>Endereço de email: rafita.XXXXXXXXX@gmail.com</p>
-            </div>
-            <div class="local">
-                <p>Rua Bélgica 88, Colônia, SP, Brasil</p>
-            </div>
-            <div class="telefone">
-                <p>Telefone: +55 (11) XXXXX-XXXX</p>
-            </div>
-        </div>
-    </section>
+            <h1>Contato</h1>
+            <form action="">
+                <label for="nomec">Nome Completo:</label><br>
+                <input type="text" id="nomec" name="nomec" value=""><br><br>
+                <label for="emailp">Email:</label><br>
+                <input type="email" id="emailp" name="emailp" value=""><br><br>
+                <label for="datanasc">Data de nascimento:</label><br>
+                <input type="date" id="datanasc" name="datanasc"><br><br>
+                <label for="membrofav">Qual o seu membro favorito dos Nirvana?</label><br>
+                <select name="membrofav" id="membrofav">
+                    <option value="Kurt">Kurt Cobain</option>
+                    <option value="Krist">Krist Novoselic</option>
+                    <option value="Dave">Dave Grohl</option>
+                </select><br><br>
+                <label for="instrumento">Qual seu instrumento que gosta?</label><br>
+                <input type="radio" id="baixo" name="instrumento" value="Baixo">
+                <label for="baixo">Baixo</label><br>
+                <input type="radio" id="guitarrah" name="instrumento" value="Guitarra harmônica">
+                <label for="guitarrah">Guitarra harmônica</label><br>
+                <input type="radio" id="guitarrap" name="instrumento" value="Guitarra principal">
+                <label for="guitarrap">Guitarra principal</label><br>
+                <input type="radio" id="bateria" name="instrumento" value="Bateria">
+                <label for="bateria">Bateria</label><br><br>
+                <label for="genero">Gênero:</label><br>
+                <input list="genero">
+                <datalist id="genero">
+                    <option value="Masculino">
+                    <option value="Feminino">
+                </datalist><br><br>
+                <label>Escreva um comentário sobre a banda Nirvana:</label><br>
+                <textarea name="mensagem" id="mensagem" rows="10" cols="30"></textarea>
+            </form>
+        </section>
     </main>
     <footer>
         <p>&copy; 2025 - Criado por Rafael Lima - Todos os Direitos reservados</p>
