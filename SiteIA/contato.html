@@ -37,32 +37,46 @@
             <h1>Contato</h1>
             <div class="container-form">
                 <form class="formulario-contato" action="https://formsubmit.co/rafita.limagames2@gmail.com" method="post">
-                    <label for="nomec">Nome completo:</label><br>
-                    <input type="text" id="nomec" name="nomec" value=""><br><br>
-                    <label for="emailp">Email:</label><br>
-                    <input type="email" id="emailp" name="emailp" value=""><br><br>
-                    <label for="datanasc">Data de nascimento:</label><br>
-                    <input type="date" id="datanasc" name="datanasc"><br><br>
-                    <label for="membrofav">Qual o seu membro favorito do Nirvana?</label><br>
-                    <select name="membrofav" id="membrofav">
-                        <option value="Kurt">Kurt Cobain</option>
-                        <option value="Krist">Krist Novoselic</option>
-                        <option value="Dave">Dave Grohl</option>
-                    </select><br><br>
-                    <label for="instrumento">Qual seu instrumento que gosta?</label><br>
-                    <input type="radio" id="baixo" name="instrumento" value="Baixo"> Baixo<br>
-                    <input type="radio" id="guitarrah" name="instrumento" value="Guitarra harmônica"> Guitarra harmônica <br>
-                    <input type="radio" id="guitarrap" name="instrumento" value="Guitarra principal"> Guitarra principal <br>
-                    <input type="radio" id="bateria" name="instrumento" value="Bateria"> Bateria <br><br>
-                    <label for="genero">Gênero:</label><br>
-                    <input list="genero">
-                    <datalist id="genero">
-                        <option value="Masculino">
-                        <option value="Feminino">
-                    </datalist><br><br>
-                    <label>Escreva um comentário sobre a banda Nirvana:</label><br>
-                    <textarea name="mensagem" id="mensagem" rows="10" cols="30"></textarea><br><br>
-                    <input type="submit" value="Enviar">
+                    <div class="nome-container">
+                        <label for="Nome completo">Nome completo:</label><br>
+                        <input type="text" id="Nome completo" name="Nome completo" value="">
+                    </div>
+                    <div class="email-container">
+                        <label for="Email">Email:</label><br>
+                        <input type="email" id="Email" name="Email" value="">
+                    </div>
+                    <div class="nascimento-container">
+                        <label for="Data de nascimento">Data de nascimento:</label><br>
+                        <input type="date" id="Data de nascimento" name="Data de nascimento">
+                    </div>
+                    <div class="membro-container">
+                        <label for="Membro favorito">Qual o seu membro favorito do Nirvana?</label><br>
+                        <select name="Membro favorito" id="Membro favorito">
+                            <option value="Kurt Cobain">Kurt Cobain</option>
+                            <option value="Krist Novoselic">Krist Novoselic</option>
+                            <option value="Dave Grohl">Dave Grohl</option>
+                        </select>
+                    </div>
+                    <div class="instrumento-container">
+                        <label for="Instrumento">Qual seu instrumento que gosta?</label><br>
+                        <input type="radio" id="baixo" name="instrumento" value="Baixo"> Baixo<br>
+                        <input type="radio" id="guitarrah" name="instrumento" value="Guitarra harmônica"> Guitarra harmônica <br>
+                        <input type="radio" id="guitarrap" name="instrumento" value="Guitarra principal"> Guitarra principal <br>
+                        <input type="radio" id="bateria" name="instrumento" value="Bateria"> Bateria
+                    </div>
+                    <div class="genero-container">
+                        <label for="genero">Gênero:</label><br>
+                        <input list="Genero">
+                        <datalist id="Genero">
+                            <option value="Masculino">
+                            <option value="Feminino">
+                        </datalist>
+                    </div>
+                    <div class="mensagem-container">
+                        <label>Escreva um comentário sobre a banda Nirvana:</label><br>
+                        <textarea name="Mensagem" id="mensagem" rows="10" cols="30"></textarea><br><br>
+                        <input type="submit" value="Enviar">
+                    </div>
                 </form>
             </div>
         </section>

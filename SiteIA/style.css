@@ -397,6 +397,17 @@ section{
     padding: 20px;
 }
 
+.container-form{
+    display: flex;
+    margin: auto;
+    border-radius: 50px;
+    padding: 40px;
+    width: 1000px;
+    justify-content: center;
+    background-color: #2e303373;
+    box-shadow: rgb(94, 95, 95) 4px 4px 25px 2px;
+}
+
 footer{
     padding: 20px;
     margin-bottom: 15px;
