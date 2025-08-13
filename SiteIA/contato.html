@@ -36,7 +36,7 @@
         <section id="contato">
             <h1>Contato</h1>
             <div class="container-form">
-                <form class="formulario-contato" action="https://formsubmit.co/rafita.limagames2@gmail.com" method="post">
+                <form class="formulario-contato" action="https://formsubmit.co/rafita.limagames2@gmail.com" method="POST">
                     <div class="nome-container">
                         <label for="Nome completo">Nome completo:</label><br>
                         <input type="text" id="Nome completo" name="Nome completo" value="">
@@ -75,8 +75,13 @@
                     <div class="mensagem-container">
                         <label>Escreva um comentário sobre a banda Nirvana:</label><br>
                         <textarea name="Mensagem" id="mensagem" rows="10" cols="30"></textarea><br><br>
-                        <input type="submit" value="Enviar">
                     </div>
+                    <div>
+                        <input type="submit" value="Enviar" id="botao">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="">
+                    </div>
+                    
                 </form>
             </div>
         </section>

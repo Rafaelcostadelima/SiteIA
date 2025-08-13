@@ -414,6 +414,30 @@ footer{
     margin-top: 30px;
 }
 
+.mensagem-container{
+    margin-top: 7%;
+}
+
+#menagem{
+    border-radius: 15px;
+}
+
+#botao{
+    display: inline-block;
+    padding: 10px 25px ;
+    background-color: #bdb831;
+    color: aliceblue;
+    text-decoration: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#botao:hover{
+    background-color: #888421;
+    color: aliceblue;
+    transform: scale(0.99);
+}
+
 @media (max-width:1300px){
     .banner2{
         background: url(img/banner2.jpg) no-repeat center/cover;
