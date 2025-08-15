@@ -75,9 +75,9 @@ header .container{
     flex-wrap: wrap;
 }
 
-.logo{
-    font-size: 1.5em;
-    font-weight: bold;
+.logo img{
+    display: flex;
+    max-width: 90px;
 }
 
 .logo a{
